@@ -1,0 +1,27 @@
+{
+  "name": "oz-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "oz compile && mocha --exit --recursive test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^3.1.0",
+    "@openzeppelin/contracts-ethereum-package": "^2.4.0",
+    "@openzeppelin/test-environment": "^0.1.4",
+    "@openzeppelin/test-helpers": "^0.5.6",
+    "@openzeppelin/upgrades": "^2.8.0",
+    "@truffle/hdwallet-provider": "^1.0.42",
+    "chai": "^4.2.0",
+    "mocha": "^8.1.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contract-loader": "^0.6.1",
+    "chai-as-promised": "^7.1.1",
+    "crypto": "^1.0.1",
+    "web3": "^1.2.11"
+  }
+}

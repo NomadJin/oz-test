@@ -1,0 +1,522 @@
+{
+  "contracts": {
+    "DataTraceability": {
+      "address": "0xbe7dD0636E51705B32E66513317F2942CC2FD23a",
+      "constructorCode": "6080604052613aac806100136000396000f3fe",
+      "bodyBytecodeHash": "7a57e4886977bdb63177fc0cf723b6bda9c90dcb51d0a52c36bbb9a03d40414a",
+      "localBytecodeHash": "1360d93ae584d1db85d9b79b57c64d0365bfdc629f2a7d72e63a06ba71ef3e11",
+      "deployedBytecodeHash": "1360d93ae584d1db85d9b79b57c64d0365bfdc629f2a7d72e63a06ba71ef3e11",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_mapping<t_bool>": {
+          "id": "t_mapping<t_bool>",
+          "valueType": "t_bool",
+          "label": "mapping(key => bool)",
+          "kind": "mapping"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_mapping<t_address>": {
+          "id": "t_mapping<t_address>",
+          "valueType": "t_address",
+          "label": "mapping(key => address)",
+          "kind": "mapping"
+        },
+        "t_struct<Counters.Counter>": {
+          "id": "t_struct<Counters.Counter>",
+          "kind": "struct",
+          "label": "Counters.Counter",
+          "members": [
+            {
+              "label": "_value",
+              "astId": 241,
+              "type": "t_uint256",
+              "src": "1024:14:3"
+            }
+          ]
+        },
+        "t_mapping<t_struct<Counters.Counter>>": {
+          "id": "t_mapping<t_struct<Counters.Counter>>",
+          "valueType": "t_struct<Counters.Counter>",
+          "label": "mapping(key => Counters.Counter)",
+          "kind": "mapping"
+        },
+        "t_array:dyn<t_uint256>": {
+          "id": "t_array:dyn<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "dyn",
+          "kind": "array",
+          "label": "uint256[]"
+        },
+        "t_mapping<t_array:dyn<t_uint256>>": {
+          "id": "t_mapping<t_array:dyn<t_uint256>>",
+          "valueType": "t_array:dyn<t_uint256>",
+          "label": "mapping(key => uint256[])",
+          "kind": "mapping"
+        },
+        "t_mapping<t_uint256>": {
+          "id": "t_mapping<t_uint256>",
+          "valueType": "t_uint256",
+          "label": "mapping(key => uint256)",
+          "kind": "mapping"
+        },
+        "t_string": {
+          "id": "t_string",
+          "kind": "elementary",
+          "label": "string"
+        },
+        "t_mapping<t_string>": {
+          "id": "t_mapping<t_string>",
+          "valueType": "t_string",
+          "label": "mapping(key => string)",
+          "kind": "mapping"
+        },
+        "t_array:49<t_uint256>": {
+          "id": "t_array:49<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "49",
+          "kind": "array",
+          "label": "uint256[49]"
+        },
+        "t_struct<Roles.Role>": {
+          "id": "t_struct<Roles.Role>",
+          "kind": "struct",
+          "label": "Roles.Role",
+          "members": [
+            {
+              "label": "bearer",
+              "astId": 35,
+              "type": "t_mapping<t_bool>",
+              "src": "150:32:1"
+            }
+          ]
+        },
+        "t_struct<DataTraceability.DataInfo>": {
+          "id": "t_struct<DataTraceability.DataInfo>",
+          "kind": "struct",
+          "label": "DataTraceability.DataInfo",
+          "members": [
+            {
+              "label": "dataId",
+              "astId": 2209,
+              "type": "t_address",
+              "src": "617:16:17"
+            },
+            {
+              "label": "provider",
+              "astId": 2211,
+              "type": "t_address",
+              "src": "643:18:17"
+            },
+            {
+              "label": "genTime",
+              "astId": 2213,
+              "type": "t_uint64",
+              "src": "671:17:17"
+            },
+            {
+              "label": "hash",
+              "astId": 2215,
+              "type": "t_bytes32",
+              "src": "698:14:17"
+            },
+            {
+              "label": "generation",
+              "astId": 2217,
+              "type": "t_uint16",
+              "src": "722:20:17"
+            },
+            {
+              "label": "parentsDataId",
+              "astId": 2220,
+              "type": "t_array:dyn<t_uint256>",
+              "src": "752:23:17"
+            },
+            {
+              "label": "isActive",
+              "astId": 2222,
+              "type": "t_bool",
+              "src": "785:18:17"
+            }
+          ]
+        },
+        "t_uint64": {
+          "id": "t_uint64",
+          "kind": "elementary",
+          "label": "uint64"
+        },
+        "t_bytes32": {
+          "id": "t_bytes32",
+          "kind": "elementary",
+          "label": "bytes32"
+        },
+        "t_uint16": {
+          "id": "t_uint16",
+          "kind": "elementary",
+          "label": "uint16"
+        },
+        "t_mapping<t_struct<DataTraceability.DataInfo>>": {
+          "id": "t_mapping<t_struct<DataTraceability.DataInfo>>",
+          "valueType": "t_struct<DataTraceability.DataInfo>",
+          "label": "mapping(key => DataTraceability.DataInfo)",
+          "kind": "mapping"
+        },
+        "t_struct<DataTraceability.TraceInfo>": {
+          "id": "t_struct<DataTraceability.TraceInfo>",
+          "kind": "struct",
+          "label": "DataTraceability.TraceInfo",
+          "members": [
+            {
+              "label": "traceId",
+              "astId": 2225,
+              "type": "t_uint256",
+              "src": "843:15:17"
+            },
+            {
+              "label": "dataId",
+              "astId": 2227,
+              "type": "t_address",
+              "src": "868:14:17"
+            },
+            {
+              "label": "accessor",
+              "astId": 2229,
+              "type": "t_address",
+              "src": "892:16:17"
+            },
+            {
+              "label": "accessAction",
+              "astId": 2231,
+              "type": "t_enum<DataTraceability.AccessAction>",
+              "src": "918:25:17"
+            },
+            {
+              "label": "accessTime",
+              "astId": 2233,
+              "type": "t_uint64",
+              "src": "953:18:17"
+            },
+            {
+              "label": "toAddress",
+              "astId": 2235,
+              "type": "t_address",
+              "src": "981:17:17"
+            },
+            {
+              "label": "fromAddress",
+              "astId": 2237,
+              "type": "t_address",
+              "src": "1008:19:17"
+            },
+            {
+              "label": "isActive",
+              "astId": 2239,
+              "type": "t_bool",
+              "src": "1037:16:17"
+            },
+            {
+              "label": "message",
+              "astId": 2241,
+              "type": "t_bytes32",
+              "src": "1063:15:17"
+            }
+          ]
+        },
+        "t_enum<DataTraceability.AccessAction>": {
+          "id": "t_enum<DataTraceability.AccessAction>",
+          "kind": "enum",
+          "label": "DataTraceability.AccessAction",
+          "members": [
+            "Created",
+            "Sent",
+            "Received",
+            "Analyzed",
+            "Result",
+            "Deleted"
+          ]
+        },
+        "t_mapping<t_struct<DataTraceability.TraceInfo>>": {
+          "id": "t_mapping<t_struct<DataTraceability.TraceInfo>>",
+          "valueType": "t_struct<DataTraceability.TraceInfo>",
+          "label": "mapping(key => DataTraceability.TraceInfo)",
+          "kind": "mapping"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 2125,
+          "type": "t_bool",
+          "src": "757:24:16"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 2127,
+          "type": "t_bool",
+          "src": "876:25:16"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 2189,
+          "type": "t_array:50<t_uint256>",
+          "src": "1982:29:16"
+        },
+        {
+          "contract": "ERC165",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/introspection/ERC165.sol",
+          "label": "_supportedInterfaces",
+          "astId": 297,
+          "type": "t_mapping<t_bool>",
+          "src": "565:52:4"
+        },
+        {
+          "contract": "ERC165",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/introspection/ERC165.sol",
+          "label": "______gap",
+          "astId": 342,
+          "type": "t_array:50<t_uint256>",
+          "src": "1729:29:4"
+        },
+        {
+          "contract": "ERC721",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721.sol",
+          "label": "_tokenOwner",
+          "astId": 574,
+          "type": "t_mapping<t_address>",
+          "src": "886:48:7"
+        },
+        {
+          "contract": "ERC721",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721.sol",
+          "label": "_tokenApprovals",
+          "astId": 578,
+          "type": "t_mapping<t_address>",
+          "src": "990:52:7"
+        },
+        {
+          "contract": "ERC721",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721.sol",
+          "label": "_ownedTokensCount",
+          "astId": 582,
+          "type": "t_mapping<t_struct<Counters.Counter>>",
+          "src": "1100:63:7"
+        },
+        {
+          "contract": "ERC721",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721.sol",
+          "label": "_operatorApprovals",
+          "astId": 588,
+          "type": "t_mapping<t_bool>",
+          "src": "1218:73:7"
+        },
+        {
+          "contract": "ERC721",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721.sol",
+          "label": "______gap",
+          "astId": 1234,
+          "type": "t_array:50<t_uint256>",
+          "src": "16014:29:7"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "_ownedTokens",
+          "astId": 1257,
+          "type": "t_mapping<t_array:dyn<t_uint256>>",
+          "src": "502:50:8"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "_ownedTokensIndex",
+          "astId": 1261,
+          "type": "t_mapping<t_uint256>",
+          "src": "622:53:8"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "_allTokens",
+          "astId": 1264,
+          "type": "t_array:dyn<t_uint256>",
+          "src": "736:28:8"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "_allTokensIndex",
+          "astId": 1268,
+          "type": "t_mapping<t_uint256>",
+          "src": "835:51:8"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "______gap",
+          "astId": 1599,
+          "type": "t_array:50<t_uint256>",
+          "src": "9053:29:8"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "_name",
+          "astId": 1619,
+          "type": "t_string",
+          "src": "323:20:9"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "_symbol",
+          "astId": 1621,
+          "type": "t_string",
+          "src": "370:22:9"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "_tokenURIs",
+          "astId": 1625,
+          "type": "t_mapping<t_string>",
+          "src": "438:45:9"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "_baseURI",
+          "astId": 1627,
+          "type": "t_string",
+          "src": "506:23:9"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "______gap",
+          "astId": 1797,
+          "type": "t_array:49<t_uint256>",
+          "src": "4297:29:9"
+        },
+        {
+          "contract": "MinterRole",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/access/roles/MinterRole.sol",
+          "label": "_minters",
+          "astId": 132,
+          "type": "t_struct<Roles.Role>",
+          "src": "327:27:2"
+        },
+        {
+          "contract": "MinterRole",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/access/roles/MinterRole.sol",
+          "label": "______gap",
+          "astId": 232,
+          "type": "t_array:50<t_uint256>",
+          "src": "1193:29:2"
+        },
+        {
+          "contract": "ERC721MetadataMintable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721MetadataMintable.sol",
+          "label": "______gap",
+          "astId": 1867,
+          "type": "t_array:50<t_uint256>",
+          "src": "1057:29:10"
+        },
+        {
+          "contract": "DataTraceability",
+          "path": "contracts/DataTraceability.sol",
+          "label": "owner",
+          "astId": 2207,
+          "type": "t_address",
+          "src": "564:20:17"
+        },
+        {
+          "contract": "DataTraceability",
+          "path": "contracts/DataTraceability.sol",
+          "label": "myDataInfo",
+          "astId": 2253,
+          "type": "t_mapping<t_struct<DataTraceability.DataInfo>>",
+          "src": "1169:47:17"
+        },
+        {
+          "contract": "DataTraceability",
+          "path": "contracts/DataTraceability.sol",
+          "label": "myTraceIdList",
+          "astId": 2258,
+          "type": "t_mapping<t_array:dyn<t_uint256>>",
+          "src": "1301:51:17"
+        },
+        {
+          "contract": "DataTraceability",
+          "path": "contracts/DataTraceability.sol",
+          "label": "myTraceInfo",
+          "astId": 2262,
+          "type": "t_mapping<t_struct<DataTraceability.TraceInfo>>",
+          "src": "1382:49:17"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "oz-test/Box": [
+      {
+        "address": "0x650930222EEEc388B68ee6Af3f4ddE7d039D7916",
+        "kind": "NonProxy",
+        "bytecodeHash": "6bae927583e5815b3e3455cda3386476259c8310e8701abeade9b61b15d7762b"
+      }
+    ],
+    "oz-test/DataTraceability": [
+      {
+        "address": "0x48dd90625a8EafdE273Ef219219f7dDCECAa35e7",
+        "version": "1.0.0",
+        "implementation": "0xbe7dD0636E51705B32E66513317F2942CC2FD23a",
+        "admin": "0xce11d0D74A1558C559517f490Eb3C3fb7468Fd6e",
+        "kind": "Upgradeable"
+      },
+      {
+        "address": "0xe898a8dDB36eAd0b348468866F40022ae1FF4FB5",
+        "version": "1.0.0",
+        "implementation": "0xbe7dD0636E51705B32E66513317F2942CC2FD23a",
+        "admin": "0xce11d0D74A1558C559517f490Eb3C3fb7468Fd6e",
+        "kind": "Upgradeable"
+      }
+    ]
+  },
+  "manifestVersion": "2.2",
+  "version": "1.0.0",
+  "proxyAdmin": {
+    "address": "0xce11d0D74A1558C559517f490Eb3C3fb7468Fd6e"
+  }
+}

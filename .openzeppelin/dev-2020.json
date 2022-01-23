@@ -1,0 +1,21 @@
+{
+  "contracts": {},
+  "solidityLibs": {},
+  "proxies": {
+    "oz-test/Box": [
+      {
+        "address": "0x9cFf0Af458ff3D2e3B3187C93B4a5e8f7f5635D5",
+        "kind": "NonProxy",
+        "bytecodeHash": "6bae927583e5815b3e3455cda3386476259c8310e8701abeade9b61b15d7762b"
+      }
+    ],
+    "oz-test/DataTraceability": [
+      {
+        "address": "0xDed0923CbeE9Df6A5d293933190144991184E6ff",
+        "kind": "NonProxy",
+        "bytecodeHash": "888cf89299d291ad01e5c3b6bd262daa838cd9593a2637247d8bf1a0af211e32"
+      }
+    ]
+  },
+  "manifestVersion": "2.2"
+}
